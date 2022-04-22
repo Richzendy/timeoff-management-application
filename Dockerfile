@@ -31,7 +31,7 @@ RUN adduser --system app --home /app
 USER app
 WORKDIR /app
 
-COPY .
+COPY . /app/timeoff-management
 WORKDIR /app/timeoff-management
 
 RUN npm install
