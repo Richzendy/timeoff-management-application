@@ -27,9 +27,7 @@ RUN apk add --no-cache \
     python \
     vim
 
-RUN adduser --system app --home /app
-USER app
-WORKDIR /app
+USER root
 
 COPY . /app/timeoff-management
 WORKDIR /app/timeoff-management
